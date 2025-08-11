@@ -15,7 +15,7 @@ jobs:
       - name: Copy pdf file
         run: mkdir -p github_deploy && cp LectureNotes/main.pdf github_deploy
       - name: Release
-        # if: startsWith(github.ref, 'refs/tags/') # Only create a release when pushing to a tag
+        if: startsWith(github.ref, 'refs/tags/') # Only create a release when pushing to a tag
         uses: softprops/action-gh-release@v1
         with:
           files: github_deploy/main.pdf

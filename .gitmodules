@@ -1,0 +1,3 @@
+[submodule "LectureNotes/Templates"]
+	path = LectureNotes/Templates
+	url = git@github.com:LudovicDeMatteis/Typst-templates.git

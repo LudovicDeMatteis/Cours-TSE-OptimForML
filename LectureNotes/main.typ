@@ -8,9 +8,17 @@
       "email": "ldematteis@laas.fr",
     ),
   ),
+  school: "Toulouse School of Economics",
 )
 
-// #outline(depth: 2, indent: 10%, title: "Table of contents")
-// #pagebreak()
+#outline(depth: 2, indent: 10%, title: "Table of contents")
+#pagebreak()
 
-#lorem(40)
+#include "1.Motivations.typ"
+#include "2.Derivatives.typ"
+#include "3.GradientDescent.typ"
+#include "4.NewtonMethod.typ"
+#include "5.StochasticOptimization.typ"
+#include "6.NeuralNetworks.typ"
+#include "7.Opening.typ"
+#include "8.Conclusion.typ"

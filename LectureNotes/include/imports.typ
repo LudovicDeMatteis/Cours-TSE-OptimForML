@@ -3,3 +3,4 @@
 #import "@preview/unify:0.7.1"
 #import "@preview/glossarium:0.5.8"
 
+#import "../Templates/global/math.typ": *

@@ -11,7 +11,7 @@
   school: "Toulouse School of Economics",
 )
 
-#outline(depth: 2, indent: 10%, title: "Table of contents")
+#outline(title: "Table of contents")
 #pagebreak()
 
 #include "1.Motivations.typ"

@@ -8,7 +8,7 @@ In unconstraint optimization, we consider problems of the form
 $ inf_(x in RR^n) f(x) $ <inf_problem>
 we define the set of *global minimizers* of the function $f$ as
 $ arg min_(x in RR^n) f(x) =^"def" {x_0 in RR^n | forall x in RR^n, f(x_0) <= f(x)} $
-The minimizer of a function does not necessarily exists and if it does, it can be non unique.
+The global minimizer of a function does not necessarily exists and if it does, it can be non unique.
 #subpar.grid(
   figure(image("Images/function_convexe.png"), caption: [Unique Minimizer]),
   <unique_min>,
@@ -21,8 +21,11 @@ The minimizer of a function does not necessarily exists and if it does, it can b
   label: <minimizers>,
 )
 @minimizers shows different function shapes corresponding to different number of minimizers.
-In general, when a minimizer exists - and this will be our focus for the rest of the course - we denote the problem @inf_problem as
+In general, when a global minimizer exists - and this will be our focus for the rest of the course - we denote the problem @inf_problem as
 $ min_(x in RR^n) f(x) $ <min_problem>
+
+We will also define the notion of *local minimizer* as follows. The point $x^*$ is a local minimizer of the function $f$ if there exists a radius $r > 0$ such that for all $x in RR^n$ such that $||x - x^*|| <= r$, we have $f(x^*) <= f(x)$.
+Note that a local minimizer is not necessarily a global minimizer (but a global minimizer is necessarly a local minimizer).
 
 == Regression
 We will start by considering a linear regression problem, in which

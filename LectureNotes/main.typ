@@ -3,9 +3,10 @@
 #show: notes.with(
   title: "Optimisation for machine learning",
   authors: (
-    "Ludovic De Matteis": (
-      "affiliation": "LAAS-CNRS",
-      "email": "ldematteis@laas.fr",
+    (
+      name: "Ludovic De Matteis",
+      // affiliation: "LAAS-CNRS",
+      email: "ldematteis@laas.fr",
     ),
   ),
   school: "Toulouse School of Economics",

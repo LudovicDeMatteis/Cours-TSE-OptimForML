@@ -13,9 +13,8 @@ The global minimizer of a function does not necessarily exists and if it does, i
   figure(image("Images/function_convexe.png"), caption: [Unique Minimizer]),
   <unique_min>,
   figure(image("Images/250px-Nonquasiconvex_function.png"), caption: [Multiple Minimizer]),
-  <multiple_min>,
-  figure(image("Images/X_Cubed.svg.png"), caption: [Zero Minimizer]),
-  <zero_min>,
+
+  <multiple_min>, figure(image("Images/X_Cubed.svg.png"), caption: [Zero Minimizer]), <zero_min>,
   columns: (1.5fr, 1fr, 0.7fr),
   caption: [Different functions shapes and corresponding number of minimizers],
   label: <minimizers>,
@@ -53,11 +52,12 @@ In this problem, we aim the minimize the function
 $ f(x) = sum_(i-1)^n l(-y_i<x, a_i>) = L(-"diag"(y)A x) $
 where $l$ is the 0-1 loss function $1_(RR^+)$ or a smooth approximation of it, giving a value of 1 if the signs of $y_i$ and $<a_i, x>$ are opposed and zero otherwise.
 #figure(
-  box(
-    image("Images/classification.png", height: 3in, fit: "cover"),
-    clip: true,
-    inset: (bottom: -1cm, top: -1cm, left: -2.5cm, right: -2.6cm),
-  ),
+  box(image("Images/classification.png", height: 3in, fit: "cover"), clip: true, inset: (
+    bottom: -1cm,
+    top: -1cm,
+    left: -2.5cm,
+    right: -2.6cm,
+  )),
   caption: [Binary Classification problem. \
     The function in black aims to separate as well as possible the different classes],
 ) <binary_class>

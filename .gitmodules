@@ -1,3 +1,6 @@
 [submodule "LectureNotes/Templates"]
 	path = LectureNotes/Templates
 	url = git@github.com:LudovicDeMatteis/Typst-templates.git
+[submodule "Slides/Templates"]
+	path = Slides/Templates
+	url = git@github.com:LudovicDeMatteis/Typst-templates.git

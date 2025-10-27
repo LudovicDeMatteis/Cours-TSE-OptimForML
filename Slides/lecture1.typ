@@ -352,7 +352,7 @@
     columns: (auto, auto),
     gutter: 5%,
     [
-      #algorithm-figure("Binary Search", vstroke: .5pt + luma(200), {
+      #algorithm-figure("Gradient Descent", vstroke: .5pt + luma(200), {
         import algorithmic: *
         Procedure("Gradient Descent", ($x_0$, $f$), {
           Comment[Initialize the solution]

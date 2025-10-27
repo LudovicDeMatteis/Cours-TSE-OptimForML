@@ -57,9 +57,21 @@ where $f_i$ is the $i$-th component of the vector-valued function $f$.
 _Note: We observe that for a scalar-valued function, the Jacobian equal the transpose of the gradient._
 
 == Derivative of classification cost
+Let's consider the classification cost function defined as
+$ f(x) = sum_(i-1)^n l(-y_i <x, a_i>) = L(-"diag"(y) A x) $
+We can compute the gradient of this function as follows
+$
+  f'(x) & = sum_(i-1)^n l'(-y_i <x, a_i>) (-y_i a_i) \
+        & = -A^T "diag"(y) L'(-"diag"(y) A x)
+$
+where $L'$ is the vector of derivatives of the function $l$ applied component-wise.
 
 == The chain rule
-
+The chain rule allows to compute the derivative of a composition of functions. Let $f: RR^d -> RR^p$ and $g: RR^p -> RR$ be two differentiable functions. The function $h: RR^d -> RR$ defined as
+$ h(x) = g(f(x)) $
+can be shown to be differentiable at point $x_0 in RR^d$ if $f$ is differentiable at $x_0$ and $g$ is differentiable at $f(x_0)$ and its gradient is given by
+$ nabla h(x_0) = J_f(x_0)^T nabla g(f(x_0)) $
+where $J_f(x_0)$ is the Jacobian of function $f$ at point $x_0$ and $nabla g(f(x_0))$ is the gradient of function $g$ at point $f(x_0)$.
 
 == First order optimality conditions
 Let's consider again an unconstrained minimization problem of the form of @inf_problem.
@@ -78,3 +90,6 @@ $ nabla f(x^*) = 0 $
   Eventually, we have $nabla f(x^*)^T bar(h) = 0$ for all $bar(h)$ such that $||bar(h)|| = 1$, and thus #nonum($nabla f(x^*) = 0$)
   #align(right)[$qed$]
 ]
+Note that this is a necessary condition for optimality but is not sufficient (e.g. saddle points).
+
+For constrainted problems, the first order optimality conditions are more complex and will no be considered in this course.

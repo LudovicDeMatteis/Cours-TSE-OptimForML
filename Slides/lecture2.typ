@@ -485,6 +485,7 @@
     + Interpretability: Enhancing the transparency of neural networks to understand their decision-making processes
   - Future research directions include exploring new architectures, optimization techniques, and applications across various domains
 ]
+
 // Next class
 #content_slide(title: "Conclusion", subtitle: "Next practical")[
   - In the next class, we will explore practical implementations of the concepts covered today

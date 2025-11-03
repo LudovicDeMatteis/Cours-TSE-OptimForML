@@ -5,3 +5,6 @@ To access the praticals please follow the links and make copies of the notebook:
 - Practical 1 - https://colab.research.google.com/drive/14xJedhkr08B9dEjUMsioPN2oB4E2DmwQ?usp=sharing
 - Practical 2 - Coming soon
 - Practical 3 - Coming soon
+
+
+https://github.com/LudovicDeMatteis/Cours-TSE-OptimForML
